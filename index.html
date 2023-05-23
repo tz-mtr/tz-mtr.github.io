@@ -301,33 +301,7 @@
 <!-- header S -->
 <header id="header">
     <div class="headerTop siteWidth">
-        <h1 title="天州地铁" id="logo"><a href="https://tz-mtr.github.io/"><img src="index_files/1e5d40cf770b49af960390786fed5fe2.png"></a></h1>
-
-
-<div id="VolidateCodeDiv" class="modal in" aria-hidden="false" style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close"><span aria-hidden="true">×</span></button>
-                <h4 class="modal-title">搜索过于频繁，请输入验证码</h4>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <div style="max-height: 600px;">
-                        <input id="js-ticket-search" name="CaptchaTicket" type="hidden" data-val="true" data-val-required="请点击验证!" value="">
-                        <input id="js-ticketId-search" name="CaptchaTicketId" type="hidden" value="">
-                        <input id="js-btn-verify-search" type="button" value="点击验证" class="btn btn-default">
-                        <span class="field-validation-valid" data-valmsg-for="Ticket" id="captchaticketvalid-search" data-valmsg-replace="true" hidden=""></span>
-                        <input data-val="true" data-val-captcha-url="/captcha/validate" id="SearchValidateCode" type="hidden">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <a class="btn btn-sm btn-primary" id="confirmNotApprove" data-ajax="true" data-id="search">确定</a>
-            </div>
-        </div>
-    </div>
-</div>
+        <h1 title="天州地铁" id="logo"><a href="https://tz-mtr.github.io/"><img src="index_files/logo.png"></a></h1>
 <div class="modal-backdrop in"></div>
 
 <script src="index_files/power.security.csrf.js"></script>
@@ -625,24 +599,6 @@
 
         </div>
     </nav>
-    <script>
-        //手机版显示二维码
-        hover($(".headerTop dl"), "on");
-
-        //导航下拉效果
-        $(".mainNav")
-            .slide({
-                type: "menu",
-                titCell: ".item",
-                targetCell: ".itemSub",
-                titOnClassName: "currentItem",
-                effect: "slideDown",
-                delayTime: 200,
-                returnDefault: true,
-                triggerTime: 200
-            });
-
-    </script>
 
 </header>
 <!-- header E -->
@@ -712,7 +668,7 @@
 
     <div class="bd">
         <ul style="overflow: hidden;">
-                <li class="li1" style="background: url(&quot;/upload/main/advertisement/da9ab1e94aa248138ad082ed77d8228c_1920_520.jpg&quot;) center 0px no-repeat; width: 100%; float: left; margin-right: -100%;">
+                <li class="li1" style="background: url(index_files/logo.png) center 0px no-repeat; width: 100%; float: left; margin-right: -100%;">
                     <a class="link" target="_self" title="" style="height: 520px; display: block;"></a>
 
                     <div class="con">
@@ -1052,36 +1008,6 @@
     <div class="rowB">
         <div class="mc"></div>
         <div class="siteWidth">
-            <h3 class="lxyy-hd"><a href="https://www.fmetro.net/xlyy">线路运营</a></h3>
-            <div class="information">
-                <span>信息查询</span>
-                <div class="startplatform">
-                    <input type="text" placeholder="请输入起始站" onclick="getSelected(this)">
-                    <ul><li>虫雷岗</li><li>华翠路</li><li>夏西</li><li>夏东</li><li>康怡公园</li><li>平西</li><li>平南</li><li>玉器街</li><li>中区</li><li>三山新城北</li><li>文翰湖公园</li><li>三山新城南</li><li>林岳北</li><li>林岳西</li><li>林岳东</li><li>西塱</li><li>坑口</li><li>花地湾</li><li>芳村</li><li>黄沙</li><li>长寿路</li><li>陈家祠</li><li>西门口</li><li>公园前</li><li>农讲所</li><li>烈士陵园</li><li>东山口</li><li>杨箕</li><li>体育西路</li><li>体育中心</li><li>广州东站</li><li>鱼珠</li><li>裕丰围</li><li>双岗</li><li>南海神庙</li><li>夏园</li><li>南岗</li><li>沙村</li><li>白江</li><li>新塘</li><li>官湖</li><li>新沙</li><li>嘉禾望岗</li><li>白云东平</li><li>夏良</li><li>太和</li><li>竹料</li><li>钟落潭</li><li>马沥</li><li>新和</li><li>太平</li><li>神岗</li><li>赤草</li><li>从化客运站</li><li>东风</li><li>红卫</li><li>新南</li><li>枫下</li><li>知识城</li><li>何棠下</li><li>旺村</li><li>汤村</li><li>镇龙北</li><li>镇龙</li><li>万顷沙</li><li>横沥</li><li>番禺广场</li><li>南村万博</li><li>沙溪</li><li>龙潭</li><li>磨碟沙</li><li>冼村</li><li>广州南站</li><li>石壁</li><li>会江</li><li>南浦</li><li>洛溪</li><li>南洲</li><li>东晓南</li><li>江泰路</li><li>昌岗</li><li>江南西</li><li>市二宫</li><li>海珠广场</li><li>公园前</li><li>纪念堂</li><li>越秀公园</li><li>广州火车站</li><li>三元里</li><li>飞翔公园</li><li>白云公园</li><li>白云文化广场</li><li>萧岗</li><li>江夏</li><li>黄边</li><li>嘉禾望岗</li><li>员村</li><li>天河公园</li><li>棠东</li><li>黄村</li><li>大观南路</li><li>天河智慧城</li><li>神舟路</li><li>科学城</li><li>苏元</li><li>水西</li><li>长平</li><li>金坑</li><li>镇龙西</li><li>镇龙</li><li>中新</li><li>坑贝</li><li>凤岗</li><li>朱村</li><li>山田</li><li>钟岗</li><li>增城广场</li><li>番禺广场</li><li>市广路</li><li>广州南站</li><li>陈头岗</li><li>番禺广场</li><li>市桥</li><li>汉溪长隆</li><li>大石</li><li>厦滘</li><li>沥滘</li><li>大塘</li><li>客村</li><li>广州塔</li><li>珠江新城</li><li>体育西路</li><li>石牌桥</li><li>岗顶</li><li>华师</li><li>五山</li><li>天河客运站</li><li>林和西</li><li>广州东站</li><li>燕塘</li><li>梅花园</li><li>京溪南方医院</li><li>同和</li><li>永泰</li><li>白云大道北</li><li>嘉禾望岗</li><li>龙归</li><li>人和</li><li>高增</li><li>机场南</li><li>机场北</li><li>南沙客运港</li><li>南横</li><li>塘坑</li><li>大涌</li><li>广隆</li><li>飞沙角</li><li>金洲</li><li>蕉门</li><li>黄阁</li><li>黄阁汽车城</li><li>庆盛</li><li>东涌</li><li>低涌</li><li>海傍</li><li>石碁</li><li>新造</li><li>大学城南</li><li>大学城北</li><li>官洲</li><li>万胜围</li><li>车陂南</li><li>车陂</li><li>黄村</li><li>滘口</li><li>坦尾</li><li>中山八</li><li>西场</li><li>西村</li><li>广州火车站</li><li>小北</li><li>淘金</li><li>区庄</li><li>动物园</li><li>杨箕</li><li>五羊邨</li><li>珠江新城</li><li>猎德</li><li>潭村</li><li>员村</li><li>科韵路</li><li>车陂南</li><li>东圃</li><li>三溪</li><li>鱼珠</li><li>大沙地</li><li>大沙东</li><li>文冲</li><li>浔峰岗</li><li>横沙</li><li>沙贝</li><li>河沙</li><li>坦尾</li><li>如意坊</li><li>黄沙</li><li>文化公园</li><li>一德路</li><li>海珠广场</li><li>北京路</li><li>团一大广场</li><li>东湖</li><li>东山口</li><li>区庄</li><li>黄花岗</li><li>沙河顶</li><li>沙河</li><li>天平架</li><li>燕塘</li><li>天河客运站</li><li>长湴</li><li>植物园</li><li>龙洞</li><li>柯木塱</li><li>高塘石</li><li>黄陂</li><li>金峰</li><li>暹岗</li><li>苏元</li><li>萝岗</li><li>香雪</li><li>广州南站</li><li>大洲</li><li>陈村北</li><li>陈村</li><li>锦龙</li><li>南涌</li><li>美的</li><li>北滘公园</li><li>美的大道</li><li>石壁</li><li>谢村</li><li>钟村</li><li>汉溪长隆</li><li>南村万博</li><li>员岗</li><li>板桥</li><li>大学城南</li><li>滘心</li><li>亭岗</li><li>石井</li><li>小坪</li><li>石潭</li><li>聚龙</li><li>上步</li><li>同德</li><li>鹅掌坦</li><li>西村</li><li>彩虹桥</li><li>陈家祠</li><li>华林寺</li><li>文化公园</li><li>同福西</li><li>凤凰新村</li><li>沙园</li><li>宝岗大道</li><li>昌岗</li><li>晓港</li><li>中大</li><li>鹭江</li><li>客村</li><li>赤岗</li><li>磨碟沙</li><li>新港东</li><li>琶洲</li><li>万胜围</li><li>飞鹅岭</li><li>花都汽车城</li><li>广州北站</li><li>花城路</li><li>花果山公园</li><li>花都广场</li><li>马鞍山公园</li><li>莲塘</li><li>清㘵</li><li>清塘</li><li>高增</li><li>广州塔</li><li>海心沙</li><li>大剧院</li><li>花城大道</li><li>妇儿中心</li><li>黄埔大道</li><li>天河南</li><li>体育中心南</li><li>林和西</li><li>新城东</li><li>东平</li><li>世纪莲</li><li>澜石</li><li>魁奇路</li><li>季华园</li><li>同济路</li><li>祖庙</li><li>普君北路</li><li>朝安</li><li>桂城</li><li>南桂路</li><li>虫雷岗</li><li>千灯湖</li><li>金融高新区</li><li>龙溪</li><li>菊树</li><li>西塱</li><li>鹤洞</li><li>沙涌</li><li>沙园</li><li>燕岗</li><li>石溪</li><li>南洲</li><li>沥滘</li><li>地铁香雪</li><li>区少年宫（萝岗）</li><li>线坑</li><li>市民广场</li><li>会议中心</li><li>地铁水西</li><li>峻泰路</li><li>水西</li><li>北师大实验学校</li><li>地铁长平</li><li>羌洞</li><li>长岭居小学</li><li>岭头</li><li>干部健康中心</li><li>岭头东</li><li>贤江西</li><li>贤江公园</li><li>贤江</li><li>新丰路</li><li>广州塔</li><li>广州塔东</li><li>猎德大桥南</li><li>琶醍</li><li>南风</li><li>会展西</li><li>会展中</li><li>会展东</li><li>琶洲大桥南</li><li>琶洲塔</li><li>万胜围</li><li>南庄</li><li>湖涌</li><li>绿岛湖</li><li>智慧新城</li><li>张槎</li><li>湾华</li><li>沙岗</li><li>魁奇路</li><li>石梁</li><li>湾华</li><li>登洲</li><li>花卉世界</li><li>仙涌</li><li>石洲</li><li>林岳西</li><li>林岳东</li><li>广州南站</li><li>顺德学院站</li><li>顺德欢乐海岸</li><li>顺德一中</li><li>驹荣北路</li><li>东乐路</li><li>大良钟楼</li><li>环市北</li><li>顺德人民医院</li><li>荔村</li><li>伦教</li><li>广教</li><li>北滘公园</li><li>高村</li><li>北滘西站</li><li>潭洲会展</li><li>岳步</li><li>大墩</li><li>东平</li><li>湾华</li><li>亚艺公园</li><li>季华六路</li><li>镇安</li></ul>
-                </div>
-                <em></em>
-                <div class="endplatform">
-                    <input type="text" placeholder="请输入终点站" onclick="getSelected(this)">
-                    <ul><li>虫雷岗</li><li>华翠路</li><li>夏西</li><li>夏东</li><li>康怡公园</li><li>平西</li><li>平南</li><li>玉器街</li><li>中区</li><li>三山新城北</li><li>文翰湖公园</li><li>三山新城南</li><li>林岳北</li><li>林岳西</li><li>林岳东</li><li>西塱</li><li>坑口</li><li>花地湾</li><li>芳村</li><li>黄沙</li><li>长寿路</li><li>陈家祠</li><li>西门口</li><li>公园前</li><li>农讲所</li><li>烈士陵园</li><li>东山口</li><li>杨箕</li><li>体育西路</li><li>体育中心</li><li>广州东站</li><li>鱼珠</li><li>裕丰围</li><li>双岗</li><li>南海神庙</li><li>夏园</li><li>南岗</li><li>沙村</li><li>白江</li><li>新塘</li><li>官湖</li><li>新沙</li><li>嘉禾望岗</li><li>白云东平</li><li>夏良</li><li>太和</li><li>竹料</li><li>钟落潭</li><li>马沥</li><li>新和</li><li>太平</li><li>神岗</li><li>赤草</li><li>从化客运站</li><li>东风</li><li>红卫</li><li>新南</li><li>枫下</li><li>知识城</li><li>何棠下</li><li>旺村</li><li>汤村</li><li>镇龙北</li><li>镇龙</li><li>万顷沙</li><li>横沥</li><li>番禺广场</li><li>南村万博</li><li>沙溪</li><li>龙潭</li><li>磨碟沙</li><li>冼村</li><li>广州南站</li><li>石壁</li><li>会江</li><li>南浦</li><li>洛溪</li><li>南洲</li><li>东晓南</li><li>江泰路</li><li>昌岗</li><li>江南西</li><li>市二宫</li><li>海珠广场</li><li>公园前</li><li>纪念堂</li><li>越秀公园</li><li>广州火车站</li><li>三元里</li><li>飞翔公园</li><li>白云公园</li><li>白云文化广场</li><li>萧岗</li><li>江夏</li><li>黄边</li><li>嘉禾望岗</li><li>员村</li><li>天河公园</li><li>棠东</li><li>黄村</li><li>大观南路</li><li>天河智慧城</li><li>神舟路</li><li>科学城</li><li>苏元</li><li>水西</li><li>长平</li><li>金坑</li><li>镇龙西</li><li>镇龙</li><li>中新</li><li>坑贝</li><li>凤岗</li><li>朱村</li><li>山田</li><li>钟岗</li><li>增城广场</li><li>番禺广场</li><li>市广路</li><li>广州南站</li><li>陈头岗</li><li>番禺广场</li><li>市桥</li><li>汉溪长隆</li><li>大石</li><li>厦滘</li><li>沥滘</li><li>大塘</li><li>客村</li><li>广州塔</li><li>珠江新城</li><li>体育西路</li><li>石牌桥</li><li>岗顶</li><li>华师</li><li>五山</li><li>天河客运站</li><li>林和西</li><li>广州东站</li><li>燕塘</li><li>梅花园</li><li>京溪南方医院</li><li>同和</li><li>永泰</li><li>白云大道北</li><li>嘉禾望岗</li><li>龙归</li><li>人和</li><li>高增</li><li>机场南</li><li>机场北</li><li>南沙客运港</li><li>南横</li><li>塘坑</li><li>大涌</li><li>广隆</li><li>飞沙角</li><li>金洲</li><li>蕉门</li><li>黄阁</li><li>黄阁汽车城</li><li>庆盛</li><li>东涌</li><li>低涌</li><li>海傍</li><li>石碁</li><li>新造</li><li>大学城南</li><li>大学城北</li><li>官洲</li><li>万胜围</li><li>车陂南</li><li>车陂</li><li>黄村</li><li>滘口</li><li>坦尾</li><li>中山八</li><li>西场</li><li>西村</li><li>广州火车站</li><li>小北</li><li>淘金</li><li>区庄</li><li>动物园</li><li>杨箕</li><li>五羊邨</li><li>珠江新城</li><li>猎德</li><li>潭村</li><li>员村</li><li>科韵路</li><li>车陂南</li><li>东圃</li><li>三溪</li><li>鱼珠</li><li>大沙地</li><li>大沙东</li><li>文冲</li><li>浔峰岗</li><li>横沙</li><li>沙贝</li><li>河沙</li><li>坦尾</li><li>如意坊</li><li>黄沙</li><li>文化公园</li><li>一德路</li><li>海珠广场</li><li>北京路</li><li>团一大广场</li><li>东湖</li><li>东山口</li><li>区庄</li><li>黄花岗</li><li>沙河顶</li><li>沙河</li><li>天平架</li><li>燕塘</li><li>天河客运站</li><li>长湴</li><li>植物园</li><li>龙洞</li><li>柯木塱</li><li>高塘石</li><li>黄陂</li><li>金峰</li><li>暹岗</li><li>苏元</li><li>萝岗</li><li>香雪</li><li>广州南站</li><li>大洲</li><li>陈村北</li><li>陈村</li><li>锦龙</li><li>南涌</li><li>美的</li><li>北滘公园</li><li>美的大道</li><li>石壁</li><li>谢村</li><li>钟村</li><li>汉溪长隆</li><li>南村万博</li><li>员岗</li><li>板桥</li><li>大学城南</li><li>滘心</li><li>亭岗</li><li>石井</li><li>小坪</li><li>石潭</li><li>聚龙</li><li>上步</li><li>同德</li><li>鹅掌坦</li><li>西村</li><li>彩虹桥</li><li>陈家祠</li><li>华林寺</li><li>文化公园</li><li>同福西</li><li>凤凰新村</li><li>沙园</li><li>宝岗大道</li><li>昌岗</li><li>晓港</li><li>中大</li><li>鹭江</li><li>客村</li><li>赤岗</li><li>磨碟沙</li><li>新港东</li><li>琶洲</li><li>万胜围</li><li>飞鹅岭</li><li>花都汽车城</li><li>广州北站</li><li>花城路</li><li>花果山公园</li><li>花都广场</li><li>马鞍山公园</li><li>莲塘</li><li>清㘵</li><li>清塘</li><li>高增</li><li>广州塔</li><li>海心沙</li><li>大剧院</li><li>花城大道</li><li>妇儿中心</li><li>黄埔大道</li><li>天河南</li><li>体育中心南</li><li>林和西</li><li>新城东</li><li>东平</li><li>世纪莲</li><li>澜石</li><li>魁奇路</li><li>季华园</li><li>同济路</li><li>祖庙</li><li>普君北路</li><li>朝安</li><li>桂城</li><li>南桂路</li><li>虫雷岗</li><li>千灯湖</li><li>金融高新区</li><li>龙溪</li><li>菊树</li><li>西塱</li><li>鹤洞</li><li>沙涌</li><li>沙园</li><li>燕岗</li><li>石溪</li><li>南洲</li><li>沥滘</li><li>地铁香雪</li><li>区少年宫（萝岗）</li><li>线坑</li><li>市民广场</li><li>会议中心</li><li>地铁水西</li><li>峻泰路</li><li>水西</li><li>北师大实验学校</li><li>地铁长平</li><li>羌洞</li><li>长岭居小学</li><li>岭头</li><li>干部健康中心</li><li>岭头东</li><li>贤江西</li><li>贤江公园</li><li>贤江</li><li>新丰路</li><li>广州塔</li><li>广州塔东</li><li>猎德大桥南</li><li>琶醍</li><li>南风</li><li>会展西</li><li>会展中</li><li>会展东</li><li>琶洲大桥南</li><li>琶洲塔</li><li>万胜围</li><li>南庄</li><li>湖涌</li><li>绿岛湖</li><li>智慧新城</li><li>张槎</li><li>湾华</li><li>沙岗</li><li>魁奇路</li><li>石梁</li><li>湾华</li><li>登洲</li><li>花卉世界</li><li>仙涌</li><li>石洲</li><li>林岳西</li><li>林岳东</li><li>广州南站</li><li>顺德学院站</li><li>顺德欢乐海岸</li><li>顺德一中</li><li>驹荣北路</li><li>东乐路</li><li>大良钟楼</li><li>环市北</li><li>顺德人民医院</li><li>荔村</li><li>伦教</li><li>广教</li><li>北滘公园</li><li>高村</li><li>北滘西站</li><li>潭洲会展</li><li>岳步</li><li>大墩</li><li>东平</li><li>湾华</li><li>亚艺公园</li><li>季华六路</li><li>镇安</li></ul>
-                </div>
-                <input type="button" id="platformsearch" value="搜 索">
-            </div>
-            <div class="dtlx-box">
-                <div class="hd">
-                    <ul>
-                        <li class="li1 on">广佛线</li>
-                        <li class="li2"><em>2</em>号线</li>
-                        <li class="li3"><em>3</em>号线</li>
-                        <li class="li5">南海有轨电车1号线</li>
-                    </ul>
-                </div>
-                <div class="bd">
-                    <ul><img src="index_files/gfx4.png"></ul>
-                    <ul style="display: none;"><img src="index_files/2hx3.png"></ul>
-                    <ul style="display: none;"><img src="index_files/3hx.png"></ul>
-                    <ul style="display: none;"><img src="index_files/nhygdc5.png"></ul>
-                </div>
-            </div>
             <ul class="lxyylink-box">
                 <li class="li1"><a href="https://www.fmetro.net/xlyy/xwt"><em></em><p>线网图</p></a></li>
                 <li class="li2"><a href="https://www.fmetro.net/xlyy/pwzy"><em></em><p>票务指引</p></a></li>
@@ -1183,35 +1109,25 @@
 <!-- friendLinks S -->
 <div class="friendLinks">
     <div class="siteWidth">
-        
 
-<li class="first">
-    <a href="http://www.hzmetro.com/" target="_blank" rel="noopener noreferrer">杭州地铁</a>
+
+<li class="">
+    <a href="https://xhmtr.github.io/" target="_blank" rel="noopener noreferrer">星海地铁</a>
 </li>
 
 
 <li class="">
-    <a href="https://www.njmetro.com.cn/njdtweb/home/go-dtmain.do" target="_blank" rel="noopener noreferrer">南京地铁</a>
+    <a href="https://xcmtr.github.io/" target="_blank" rel="noopener noreferrer">夏城地铁</a>
 </li>
 
 
 <li class="">
-    <a href="https://www.szmc.net/" target="_blank" rel="noopener noreferrer">深圳地铁</a>
+    <a href="https://shmtr.github.io/" target="_blank" rel="noopener noreferrer">新海地铁</a>
 </li>
 
 
 <li class="">
-    <a href="https://www.gzmtr.com/" target="_blank" rel="noopener noreferrer">广州地铁</a>
-</li>
-
-
-<li class="">
-    <a href="http://www.shmetro.com/" target="_blank" rel="noopener noreferrer">上海地铁</a>
-</li>
-
-
-<li class="last">
-    <a href="https://www.bjsubway.com/" target="_blank" rel="noopener noreferrer">北京地铁</a>
+    <a href="https://thmtr.github.io/" target="_blank" rel="noopener noreferrer">天杭地铁</a>
 </li>
 
     </div>
@@ -1226,8 +1142,7 @@
         vertical-align: middle
     }
 </style>
-<div class="copyRight"><p>地址：佛山市禅城区魁奇二路佛山地铁大厦，电话 82488888 传真 82489999</p><p>版权所有：佛山市地铁集团有限公司&nbsp; 技术支持：动易软件&nbsp; &nbsp;备案号：粤ICP备10009365号</p></div>
-
+<a href="https://icp.gov.moe/?keyword=20230246" target="_blank">萌ICP备20230246号</a>
     </div>
 </footer>
 <!-- footer E --></div>
