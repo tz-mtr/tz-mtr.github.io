@@ -429,35 +429,6 @@
     <li class="li2 hasUl2" id="li-aqcc">
         <h3 class="h2"><a class="a2" href="https://www.fmetro.net/xlyy/aqcc">安全乘车</a></h3>
     </li>
-    <li class="li2 last2" id="li-xxcx">
-        <h3 class="h2"><a class="a2" href="https://www.fmetro.net/subway/search" target="_blank" rel="noopener noreferrer">信息查询</a></h3>
-    </li>
-
-                </ul>
-        </li>
-            <li class="spe">|</li>
-        <li class="li1 hasUl1" id="li-dtbh">
-            <h3 class="h1">
-                <a class="a1" href="https://www.fmetro.net/dtbh">地铁保护</a></h3>
-                <ul class="ul1">
-                    
-
-
-    <li class="li2 first2" id="li-bszn">
-        <h3 class="h2"><a class="a2" href="https://www.fmetro.net/dtbh/bszn">办事指南</a></h3>
-    </li>
-    <li class="li2" id="li-aqbhq">
-        <h3 class="h2"><a class="a2" href="https://www.fmetro.net/dtbh/aqbhq">安全保护区</a></h3>
-    </li>
-    <li class="li2" id="li-flfg">
-        <h3 class="h2"><a class="a2" href="https://www.fmetro.net/dtbh/flfg">法律法规</a></h3>
-    </li>
-    <li class="li2" id="li-jsbz">
-        <h3 class="h2"><a class="a2" href="https://www.fmetro.net/dtbh/jsbz">技术标准</a></h3>
-    </li>
-    <li class="li2 last2" id="li-bsjg">
-        <h3 class="h2"><a class="a2" href="https://www.fmetro.net/dtbh/bsjg">办事机构</a></h3>
-    </li>
 
                 </ul>
         </li>
@@ -1005,105 +976,7 @@
             <div class="clear"></div>
         </div>
     </div>
-    <div class="rowB">
-        <div class="mc"></div>
-        <div class="siteWidth">
-            <ul class="lxyylink-box">
-                <li class="li1"><a href="https://www.fmetro.net/xlyy/xwt"><em></em><p>线网图</p></a></li>
-                <li class="li2"><a href="https://www.fmetro.net/xlyy/pwzy"><em></em><p>票务指引</p></a></li>
-                <li class="li3"><a href="https://www.fmetro.net/xlyy/lcskb"><em></em><p>列车时刻表</p></a></li>
-                <li class="li4"><a href="https://www.fmetro.net/xlyy/ckfw"><em></em><p>乘客服务</p></a></li>
-                <li class="li5"><a href="https://www.fmetro.net/xlyy/aqcc"><em></em><p>安全乘车</p></a></li>
-                <li class="li6"><a href="https://www.fmetro.net/subway/search"><em></em><p>信息查询</p></a></li>
-            </ul>
-        </div>
-    </div>
 </div>
-<!-- content E -->
-<script src="index_files/vue.js"></script>
-<script src="index_files/vue-select2.js"></script>
-<script src="index_files/element.js"></script>
-<script>
-    jQuery("#indBmdt")
-        .slide({
-            delayTime: 1500,
-            startFun: function (i, c, s, t) { s.find(".more").attr("href", t.eq(i).find("a").attr("href")) }
-        });
-    jQuery(".dtlx-box")
-        .slide({
-            delayTime: 1500,
-            startFun: function (i, c, s, t) { s.find(".more").attr("href", t.eq(i).find("a").attr("href")) }
-        });
-
-    function getSelected(e){
-        $(".startplatform ul").removeClass("on");
-        $(".endplatform ul").removeClass("on");
-        $(e).next("ul").addClass("on");
-    }
-    $(".mc").click(function(){
-        $(".startplatform ul").removeClass("on");
-        $(".endplatform ul").removeClass("on");
-    })
-    $.ajax({
-      url: '/subway/GetStationList',
-      success: function(res) {
-        var html = "";
-        var date = res;
-        $.each(date,function(i,json){
-            for(var i = 0; i< json.length;i++){
-                var arrvalue=json[i];
-                html += "<li>"+ arrvalue.ChineseName + "</li>" ;
-            }
-        })
-        $(".startplatform ul").html(html);
-        $(".endplatform ul").html(html);
-        $(".startplatform ul li").click(function(){
-            var stext = $(this).text();
-            $(".startplatform input").val(stext);
-            $(".startplatform ul").removeClass("on");
-        })
-        $(".endplatform ul li").click(function(){
-            var etext = $(this).text();
-            $(".endplatform input").val(etext);
-            $(".endplatform ul").removeClass("on");
-        })
-        $(".startplatform input").on("keyup", function(){ var text = $(this).val().trim(); // 获取输入框中的文本并去除首尾空格 
-        $(".startplatform ul li").each(function(){ 
-            var liText = $(this).text(); 
-            if(liText.indexOf(text) != -1)
-            { 
-                $(this).show(); 
-            } else 
-            { 
-                $(this).hide(); 
-            } 
-        }); 
-        });
-        $(".endplatform input").on("keyup", function(){ var text = $(this).val().trim(); // 获取输入框中的文本并去除首尾空格 
-        $(".endplatform ul li").each(function(){ 
-            var liText = $(this).text(); 
-            if(liText.indexOf(text) != -1)
-            { 
-                $(this).show(); 
-            } else 
-            { 
-                $(this).hide(); 
-            } 
-        }); 
-        });
-        $("#platformsearch").click(function(){
-            var strat = $(".startplatform input").val();
-            var end = $(".endplatform input").val();
-            if(strat == "请输入起始站" || end =="请输入终点站"){
-                alert("请输入起始站和请输入终点站")
-            }else{
-                window.location.href = "http://www.fmetro.net/subway/search?enterName=" +strat+ "&exitName=" + end;
-            }
-        })
-      }
-    })
-    
-</script>
 
 
 <!-- friendLinks S -->
